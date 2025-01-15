@@ -26,6 +26,7 @@ int main() {
     printf("Ha quantos pontos turisticos? ");
     scanf("%d", &numero);
     printf("Ha %d pontos turisticos\n", numero);
+    printf("Dados inseridos com sucesso!\n");
 
     return 0;
 }
