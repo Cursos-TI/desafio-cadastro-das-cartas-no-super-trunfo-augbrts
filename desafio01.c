@@ -1,12 +1,12 @@
 #include <stdio.h>
  
 int main() {
-    char codigo[4];
-    char cidade[100];
-    int populacao;
-    int area;
-    float pib;
-    int numero;
+    char codigo[4]; //codigo e cidade como strings já que possuem mais de um caracteres.
+    char cidade[100]; 
+    int populacao; //população e area coloquei como numeros inteiros.
+    int area; // até tentei area como float mas percebi que não faz sentido. 
+    float pib; //pib como float para ser um pouco mais detalhado.
+    int numero; 
     
     printf("Qual o codigo da cidade? ");
     scanf("%s", &codigo);
