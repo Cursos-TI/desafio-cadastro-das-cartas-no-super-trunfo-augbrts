@@ -55,7 +55,7 @@ int main() {
     superPoder2 = populacao2 + area2 + pib2 + pontos2 + densidade2 + pibpc2;
 
     // Exibicao dos dados calculados
-    printf("\n--- Dados da Primeira Cidade ---\n");
+    printf("\n Dados da Primeira Cidade \n");
     printf("Codigo: %s\n", codigo1);
     printf("Nome: %s\n", cidade1);
     printf("Populacao: %d\n", populacao1);
@@ -66,7 +66,7 @@ int main() {
     printf("PIB per capita: %.2f\n", pibpc1);
     printf("Super Poder: %.2f\n", superPoder1);
 
-    printf("\n--- Dados da Segunda Cidade ---\n");
+    printf("\n Dados da Segunda Cidade \n");
     printf("Codigo: %s\n", codigo2);
     printf("Nome: %s\n", cidade2);
     printf("Populacao: %d\n", populacao2);
@@ -78,7 +78,7 @@ int main() {
     printf("Super Poder: %.2f\n", superPoder2);
 
     // Comparacao das propriedades
-    printf("\n--- Comparacao entre as Cidades ---\n");
+    printf("\n Hora do duelo! \n");
 
     // Densidade Populacional (menor vence)
     printf("Densidade Populacional: ");
@@ -134,7 +134,6 @@ int main() {
     else
         printf("Empate (%.2f)\n", superPoder1);
 
-    printf("-----------------------------\n");
     printf("Comparacao finalizada!\n");
 
     return 0;
