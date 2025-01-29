@@ -54,87 +54,70 @@ int main() {
     pibpc2 = pib2 / populacao2;
     superPoder2 = populacao2 + area2 + pib2 + pontos2 + densidade2 + pibpc2;
 
-    // Exibicao dos dados calculados
-    printf("\n Dados da Primeira Cidade \n");
-    printf("Codigo: %s\n", codigo1);
-    printf("Nome: %s\n", cidade1);
-    printf("Populacao: %d\n", populacao1);
-    printf("Area: %d km2\n", area1);
-    printf("PIB: %.2f bilhoes\n", pib1 / 1e9);
-    printf("Pontos Turisticos: %d\n", pontos1);
-    printf("Densidade Populacional: %.2f pessoas/km2\n", densidade1);
-    printf("PIB per capita: %.2f\n", pibpc1);
-    printf("Super Poder: %.2f\n", superPoder1);
-
-    printf("\n Dados da Segunda Cidade \n");
-    printf("Codigo: %s\n", codigo2);
-    printf("Nome: %s\n", cidade2);
-    printf("Populacao: %d\n", populacao2);
-    printf("Area: %d km2\n", area2);
-    printf("PIB: %.2f bilhoes\n", pib2 / 1e9);
-    printf("Pontos Turisticos: %d\n", pontos2);
-    printf("Densidade Populacional: %.2f pessoas/km2\n", densidade2);
-    printf("PIB per capita: %.2f\n", pibpc2);
-    printf("Super Poder: %.2f\n", superPoder2);
-
     // Comparacao das propriedades
     printf("\n Hora do duelo! \n");
 
     // Densidade Populacional (menor vence)
     printf("Densidade Populacional: ");
-    if (densidade1 < densidade2)
+    if (densidade1 < densidade2) {
         printf("Vencedora: %s (%.2f pessoas/km2)\n", cidade1, densidade1);
-    else if (densidade1 > densidade2)
+    } else if (densidade1 > densidade2) {
         printf("Vencedora: %s (%.2f pessoas/km2)\n", cidade2, densidade2);
-    else
+    } else {
         printf("Empate (%.2f pessoas/km2)\n", densidade1);
+    }
 
     // Populacao (maior vence)
     printf("Populacao: ");
-    if (populacao1 > populacao2)
+    if (populacao1 > populacao2) {
         printf("Vencedora: %s (%d habitantes)\n", cidade1, populacao1);
-    else if (populacao1 < populacao2)
+    } else if (populacao1 < populacao2) {
         printf("Vencedora: %s (%d habitantes)\n", cidade2, populacao2);
-    else
+    } else {
         printf("Empate (%d habitantes)\n", populacao1);
+    }
 
     // Area (maior vence)
     printf("Area: ");
-    if (area1 > area2)
+    if (area1 > area2) {
         printf("Vencedora: %s (%d km2)\n", cidade1, area1);
-    else if (area1 < area2)
+    } else if (area1 < area2) {
         printf("Vencedora: %s (%d km2)\n", cidade2, area2);
-    else
+    } else {
         printf("Empate (%d km2)\n", area1);
+    }
 
     // PIB (maior vence)
     printf("PIB: ");
-    if (pib1 > pib2)
+    if (pib1 > pib2) {
         printf("Vencedora: %s (%.2f bilhoes)\n", cidade1, pib1 / 1e9);
-    else if (pib1 < pib2)
+    } else if (pib1 < pib2) {
         printf("Vencedora: %s (%.2f bilhoes)\n", cidade2, pib2 / 1e9);
-    else
+    } else {
         printf("Empate (%.2f bilhoes)\n", pib1 / 1e9);
+    }
 
-    // Pontos Turisticos maior vence)
+    // Pontos Turisticos (maior vence)
     printf("Pontos Turisticos: ");
-    if (pontos1 > pontos2)
+    if (pontos1 > pontos2) {
         printf("Vencedora: %s (%d pontos)\n", cidade1, pontos1);
-    else if (pontos1 < pontos2)
+    } else if (pontos1 < pontos2) {
         printf("Vencedora: %s (%d pontos)\n", cidade2, pontos2);
-    else
+    } else {
         printf("Empate (%d pontos)\n", pontos1);
+    }
 
     // Super Poder (maior vence)
     printf("Super Poder: ");
-    if (superPoder1 > superPoder2)
+    if (superPoder1 > superPoder2) {
         printf("Vencedora: %s (%.2f)\n", cidade1, superPoder1);
-    else if (superPoder1 < superPoder2)
+    } else if (superPoder1 < superPoder2) {
         printf("Vencedora: %s (%.2f)\n", cidade2, superPoder2);
-    else
+    } else {
         printf("Empate (%.2f)\n", superPoder1);
+    }
 
-    printf("Comparacao finalizada!\n");
+    printf("Fim do duelo!\n");
 
     return 0;
 }
